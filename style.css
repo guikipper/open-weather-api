@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: large;
+}
+hr {
+    width: 400px;
+    margin-top: 1em;
+}
+body {
+    background-image: linear-gradient(to bottom, #595757, #FDFDFD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.h3-class{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: fixed;
+    display: block;
+    background-color: #224767;
+    color: #FDFDFD;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.form-input-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.input-form {
+    flex-basis: 60%;
+    padding: .4rem;
+}
+.classButton {
+    flex-basis: 8%;
+}
+.weather-data {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#weather-conditions {
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.weather-icon {
+    z-index: -1;
+}
+.other-info {
+    margin-top: 1.5em;
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.temperature {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.wind {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+}
+.pressure {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loading i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.show-json {
+    background-color: #595757;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute; 
+    cursor: pointer;
+    bottom: 1.2em;
+    z-index: 1; /* define a ordem de empilhamento do elemento, maior valor fica sobre os menores */
+}
+
+.show-json:hover{
+    background-color: #7a7676;
+}
+.json-data {
+    background-color: #FDFDFD;
+    box-shadow: 5px 5px 5px #595757;
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    z-index: 2;
+    justify-content: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+#json-data-pre {
+    color: rgb(141, 94, 7);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <script type="text/javascript" src="js/script.js" defer="defer"></script>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+
+        <div class="json-data" id="json-data">
+                <pre id="json-data-pre"></pre>   
+        </div>
+        <div class="container" id="container">
+            <div class="form-input-data">
+                <div class="h3-class">
+                    <h3 id="h3text">Confira o clima de uma cidade</h3>
+                </div>
+                <div class="form-input-container">
+                    <input class="input-form" type="text" placeholder="Informe a cidade" id="city-input">
+                    <button id="search" class="classButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+                <div id="weather-data" class="weather-data">
+                    <h2>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="city-name"></span>
+                    </h2>
+
+                    <hr>
+
+                    <div id="weather-conditions">
+                        <p id="conditions">Sol</p>
+                        <img src="" alt="" id="weather-icon">
+                    </div>
+
+                    <div class="other-info">
+                        
+                        <p class="temperature">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <span id="temperature"></span> &deg;C
+                        </p>
+
+                        <p class="wind">
+                            <i class="fa-solid fa-wind"></i>
+                            <span id="wind"></span> km/h
+                        </p>
+
+                        <p class="max-min">
+                            <i class="fa-solid fa-up-down"></i>
+                            <span id="max"></span> &deg;C
+                            <span id="min">20</span> &deg;C
+                        </p>
+
+                        <p class="pressure">
+                            <i class="fa-solid fa-gauge"></i>
+                            <span id="pressure"></span> hPa
+                        </p>
+                    </div>
+                    
+                    </p>
+                </div>
+
+                <div class="show-json" id="show-json">
+                    <i class="fa-solid fa-exclamation"></i>
+                </div>
+        </div>
+        
+        
+        
+        <div id="loading" class="hide">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+
+
+    </body>
+</html>
