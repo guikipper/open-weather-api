@@ -27,3 +27,8 @@ Para executar este projeto localmente em sua máquina, siga os passos abaixo:
 
 ```bash
 git clone https://github.com/seu-usuario/open-weather-api.git
+
+## Print do Projeto
+
+![image](https://github.com/guikipper/open-weather-api/assets/33471042/de186cdf-5668-4b43-8ddb-757e6b9bcbaf)
+
