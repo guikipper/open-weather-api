@@ -1,6 +1,6 @@
 # Open Weather API 🌤️ 🌧️
 
-O projeto "Open Weather API" é uma aplicação web simples desenvolvida para praticar HTML, CSS e JavaScript, além do consumo de APIs. Este projeto tem como objetivo principal fornecer informações meteorológicas atuais para qualquer cidade digitada pelo usuário, utilizando a API gratuita OpenWeather para buscar os dados.
+O projeto Open Weather API é uma aplicação web simples desenvolvida para praticar HTML, CSS e JavaScript, além do consumo de APIs. Este projeto tem como objetivo principal fornecer informações meteorológicas atuais para qualquer cidade digitada pelo usuário, utilizando a API gratuita OpenWeather para buscar os dados.
 
 ## Funcionalidades 
 
